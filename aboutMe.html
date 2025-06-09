@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me | Susana Silva Vallejo</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/aboutMe.css">
     <link rel="shortcut icon" href="./assets/icons/main_icon.ico" type="image/x-icon">
 </head>
 <body class="container">
@@ -23,30 +24,34 @@
         </section>
     </header>
 
-    <main class="content">
-        <!--Presentation about my self-->
-        <section class="content__presentation">
-            <h2>About Me</h2>
-            <p>Hi, my name is Susana.</p>
-            <p>I'm currently studying systems engineer in National University of Colombia.</p>
-            <p>I love to travel and learning new things, and then sharing them with others.</p>
-            <section class="skills">
-            <h3 class="headerSkills">Technical skills</h3>
-            <!--Skills in images-->
-            <div class="skillsContainer">
-                <div class="first-set animate__animated animate__pulse">
-                <img src="./img/python.png" alt="Python" loading="lazy" class="icon icon-card" />
-                <img src="./img/html5.jpg" alt="HTML5" loading="lazy" class="icon icon-card" />
-                <img src="./img/CSS.png" alt="CSS" loading="lazy" class="icon icon-card" />
-                </div>
-            </div>
+    <main class="main">
+        <div class="main__content">
+            <!--Presentation about my self-->
+            <section class="content__presentation">
+                <h2 class="presentation__title">About Me</h2>
+                <img class="presentation__me" src="./assets/images/Susana.png" alt="">
+                <section class="presentation_info">
+                    <p>Hi, my name is Susana.</p>
+                    <p>I'm currently studying systems engineer in National University of Colombia.</p>
+                    <p>I love to travel and learning new things, and then sharing them with others.</p>
+                </section>
+                <section class="presentation__skills">
+                    <h3 class="presentation__titleSkills">Technical skills</h3>
+                    <!--Skills in images-->
+                    <div class="presentation__skillsContainer">
+                        <img src="./assets/icons/python.ico" alt="Python" loading="lazy" class="icon" />
+                        <img src="./assets/icons/html5.ico" alt="HTML5" loading="lazy" class="icon" />
+                        <img src="./assets/icons/CSS.ico" alt="CSS" loading="lazy" class="icon" />
+                    </div>
+                </section>
             </section>
-        </section>
+        </div>
     </main>
 
     <footer class="footer">
         <section class="footer__contact">
-            <p class="footer__info">Puedes llamarme al: <a class="footer__link" href="tel:+573104118320">+57 310 411 8320</a></p>
+            <p class="footer__info">Puedes llamarme al: <a class="footer__link" href="tel:+573104117038">+57 310 411
+                    7038</a></p>
             <p class="footer__info">Puedes escribirme a: <a class="footer__link" href="mailto:susan_work@gmail.com">susan_work@gmail.com</a></p>
         </section>
         <section class="footer__social">
