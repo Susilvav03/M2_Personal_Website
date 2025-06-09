@@ -82,7 +82,8 @@
 }
 
 .mainNav__list {
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
 }
 
 .mainNav__item {
@@ -143,11 +144,42 @@
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
-    background-color: #333;
+    background-color: var(--highlight-color);
     background-clip: content-box;
     border: 0.25rem solid transparent;
     border-radius: 50%;
     font-size: 0;
     transition: transform 0.1s;
 }
+
+/* CSS for the footer */
+
+.footer {
+    background-color: var(--text-color);
+    color: var(--accent-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 15vw;
+    grid-template-rows: 1fr;
+    padding: 2vh 2vw;
+    grid-template-areas: 
+        "contact . social";
+}
+
+.footer__contact {
+    grid-area: contact;
+}
+
+.footer__social {
+    grid-area: social;
+    align-content: center;
+    justify-self: end;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--background-color);
+    grid-area: social;
+}
+
+
 
