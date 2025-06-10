@@ -1,0 +1,89 @@
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.content__contact {
+    padding: 2vh 2vw;
+    max-width: 1200px;
+    padding: 2vh 2vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__title {
+    text-align: center;
+}
+
+.contact__p {
+    max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+.contact__row {
+    display: flex;
+    justify-content: center;
+	gap: 10vw;
+}
+
+.contact__rowImg {
+    align-self: center;
+}
+.contact__img { 
+    width: 20vw;
+}
+
+/* CSS for the Form */
+
+.contact__form { 
+    border: 1px solid #c4c4c4;
+	border-radius: 10px;
+	padding: 2vh 2vw;
+}
+
+.form__title {
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+.form__label {
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+.form__group {
+	margin-bottom: 20px;
+}
+
+.form__control {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	font-size: 1rem; 
+	line-height: 1.2;
+	color: var(--text-color);
+	background: #fff;
+	border: 2px solid #fff;
+	border-radius: 10px;
+}
+
+.form__btn { 
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    display: inline-block;
+	font-size: 1.5rem;
+	padding: 15px 20px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	border-radius: 20px;
+}
+
+.form__btn--dark:hover {
+	background-color: var(--highlight-color);
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
+
