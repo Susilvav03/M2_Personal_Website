@@ -24,6 +24,7 @@
 .presentation__title {
     grid-area: title;
     font-size: 5em;
+    text-align: center;
 }
 
 .presentation__me {
@@ -61,4 +62,35 @@
 
 .icon {
     height: 15vh;
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        min-height: 100vh;
+    }
+    .content__presentation {
+        align-content: start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "title title"
+            "photo skills"
+            "info skills";
+    }
+    .presentation__title {
+        font-size: 2rem;
+    }
+
+    .presentation__me {
+        justify-self: center;
+        align-self: center;
+        width: 50vw;
+    }
+
+    .presentation_info {
+        align-self: self-start;
+    }
+
+    .presentation_info p {
+        font-size: 100%;
+    }
 }

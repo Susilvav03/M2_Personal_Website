@@ -58,10 +58,10 @@
 .header__bar {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr 3fr;
     grid-template-rows: 1fr;
     grid-template-areas:
-        "title nav";
+        "title title nav";
 
 }
 
@@ -131,6 +131,7 @@
     margin-left: 8vw;
 }
 
+
 .carousel__navigation {
     text-align: center;
 }
@@ -162,7 +163,7 @@
     grid-template-rows: 1fr;
     padding: 2vh 2vw;
     grid-template-areas: 
-        "contact . social";
+        "contact contact social";
 }
 
 .footer__contact {
@@ -181,5 +182,52 @@
     grid-area: social;
 }
 
+@media screen and (max-width: 768px) {
+    .header__title {
+        font-size: 2rem;
+        padding: 2vh 2vw;
+    }
 
+    .mainNav__item {
+        font-size: 0.8rem;
+    }
 
+    .footer {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__bar {
+        grid-template-areas:
+            "title title .";
+    }
+
+    .header__title {
+        font-size: 1.2rem;
+        padding: 2vh 2vw;
+    }
+
+    .header__mainNav {
+        position: fixed;
+        bottom: 6vh;
+        width: 100%;
+        height: 7vh;
+        background-color: #003844;
+        align-content: center;
+    }
+
+    .mainNav__list, .mainNav__item {
+        list-style: none;
+        float: none;
+        display: flex;
+        justify-content: space-around
+    }
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 0.7rem;
+    }
+}

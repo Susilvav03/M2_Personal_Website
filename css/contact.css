@@ -13,6 +13,7 @@
 
 .contact__title {
     text-align: center;
+	font-size: 3rem;
 }
 
 .contact__p {
@@ -20,6 +21,7 @@
 	margin: 0 auto;
 	padding-top: 10px;
 	padding-bottom: 50px;
+	font-size: 1.5rem;
 }
 
 .contact__row {
@@ -85,5 +87,40 @@
 	background-color: var(--highlight-color);
     scale: 1.1;
     transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+	.content {
+		min-height: 120vh;
+	}
+	.contact__title {
+		font-size: 2rem;
+	}
+
+	.contact__p {
+		font-size: 1rem;
+		padding: 10px;
+	}
+
+	.contact__img { 
+		display: none;
+	}
+
+	.contact__row {
+		gap: 0;
+	}
+
+	.form__btn { 
+		width: 100%;
+		background-color: var(--primary-color);
+		color: var(--background-color);
+		display: inline-block;
+		font-size: 1rem;
+		padding: 15px;
+		font-weight: bold;
+		letter-spacing: 10px;
+		border-radius: 20px;
+		z-index: 10;
+	}
 }
 
